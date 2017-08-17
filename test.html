@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>test</title>
+  </head>
+  <body>
+    
+    <script>
+       let add=function(n1,n2){
+				 return n1+n2
+			 }
+			 var add2=(n1,n2)=>(n1+n2);//直接回傳
+			 let add3=(n1,n2)=>{//一般寫法
+				 alert(0)
+				 return n1+n2;
+			 }
+			 
+			 //------------------------
+			 
+			 let f=(e)=>(e);
+			 const result=f(4);
+			 
+			function wayne(massage="test"){
+				alert(massage)
+			}
+//			let wayne = ()=>{
+//				
+//			}
+			let wayne2=(massage="g")=>{
+				alert(massage)
+			}
+			
+			//wayne2()
+			
+			function combine(first="a" , last="b" , aaa=first + "__" + last){
+				alert(aaa)
+			}
+			//combine(111,222,333)
+			
+			class Car{
+				constructor(color){
+					this.color=color;
+				}
+				
+				run(){
+					return "car_" + this.color
+				}
+			}
+			let car1= new Car("red");
+			let car2= new Car("blue");
+			
+			alert(car2.run())
+			
+    </script>
+  </body>
+</html>
